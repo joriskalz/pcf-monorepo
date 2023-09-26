@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContextMenu renders 1`] = `
+<Memo(CanvasContextMenu)
+  disabled={false}
+  height={-1}
+  items={
+    Array [
+      Object {
+        "checked": undefined,
+        "data": MockEntityRecord {
+          "getNamedReference": [MockFunction],
+          "id": "1",
+          "values": Object {
+            "ItemDisplayName": "Item 1",
+            "ItemEnabled": true,
+            "ItemIconColor": "blue",
+            "ItemIconName": "Open",
+            "ItemIconOnly": false,
+            "ItemKey": "item1",
+          },
+        },
+        "divider": undefined,
+        "enabled": true,
+        "iconColor": "blue",
+        "iconName": "Open",
+        "iconOnly": false,
+        "id": "1",
+        "isHeader": undefined,
+        "key": "item1",
+        "name": "Item 1",
+        "parentItemKey": undefined,
+        "topDivider": undefined,
+        "visible": undefined,
+      },
+      Object {
+        "checked": undefined,
+        "data": MockEntityRecord {
+          "getNamedReference": [MockFunction],
+          "id": "2",
+          "values": Object {
+            "ItemDisplayName": "Item 2",
+            "ItemEnabled": false,
+            "ItemIconColor": "blue",
+            "ItemIconName": "New",
+            "ItemIconOnly": true,
+            "ItemKey": "item2",
+          },
+        },
+        "divider": undefined,
+        "enabled": false,
+        "iconColor": "blue",
+        "iconName": "New",
+        "iconOnly": true,
+        "id": "2",
+        "isHeader": undefined,
+        "key": "item2",
+        "name": "Item 2",
+        "parentItemKey": undefined,
+        "topDivider": undefined,
+        "visible": undefined,
+      },
+      Object {
+        "checked": undefined,
+        "data": MockEntityRecord {
+          "getNamedReference": [MockFunction],
+          "id": "3",
+          "values": Object {
+            "ItemDisplayName": "Item 3",
+            "ItemEnabled": true,
+            "ItemIconColor": "green",
+            "ItemIconName": "Save",
+            "ItemIconOnly": true,
+            "ItemKey": "item3",
+          },
+        },
+        "divider": undefined,
+        "enabled": true,
+        "iconColor": "green",
+        "iconName": "Save",
+        "iconOnly": true,
+        "id": "3",
+        "isHeader": undefined,
+        "key": "item3",
+        "name": "Item 3",
+        "parentItemKey": undefined,
+        "topDivider": undefined,
+        "visible": undefined,
+      },
+    ]
+  }
+  onSelected={[Function]}
+  setFocus=""
+  showChevron={true}
+  tabIndex={5}
+  themeJSON={null}
+  width={-1}
+/>
+`;
+
+exports[`ContextMenu renders dummy items when no items configured 1`] = `
+<Memo(CanvasContextMenu)
+  disabled={false}
+  height={-1}
+  items={
+    Array [
+      Object {
+        "iconName": "Unknown",
+        "id": "1",
+        "key": "1",
+        "name": "Item 1",
+      },
+      Object {
+        "iconName": "Unknown",
+        "id": "2",
+        "key": "2",
+        "name": "Item 2",
+      },
+      Object {
+        "iconName": "Unknown",
+        "id": "3",
+        "key": "3",
+        "name": "Item 3",
+      },
+    ]
+  }
+  onSelected={[Function]}
+  setFocus=""
+  showChevron={true}
+  tabIndex={5}
+  themeJSON={null}
+  width={-1}
+/>
+`;
+
+exports[`ContextMenu renders subitems and shows the flyout menu 1`] = `
+<Memo(CanvasContextMenu)
+  disabled={false}
+  height={-1}
+  items={
+    Array [
+      Object {
+        "checked": undefined,
+        "data": MockEntityRecord {
+          "getNamedReference": [MockFunction],
+          "id": "1",
+          "values": Object {
+            "ItemDisplayName": "Item 1",
+            "ItemEnabled": true,
+            "ItemIconColor": "blue",
+            "ItemIconName": "Open",
+            "ItemIconOnly": false,
+            "ItemKey": "item1",
+          },
+        },
+        "divider": undefined,
+        "enabled": true,
+        "iconColor": "blue",
+        "iconName": "Open",
+        "iconOnly": false,
+        "id": "1",
+        "isHeader": undefined,
+        "key": "item1",
+        "name": "Item 1",
+        "parentItemKey": undefined,
+        "topDivider": undefined,
+        "visible": undefined,
+      },
+      Object {
+        "checked": undefined,
+        "data": MockEntityRecord {
+          "getNamedReference": [MockFunction],
+          "id": "2",
+          "values": Object {
+            "ItemDisplayName": "Item 2",
+            "ItemEnabled": false,
+            "ItemIconColor": "blue",
+            "ItemIconName": "New",
+            "ItemIconOnly": true,
+            "ItemKey": "item2",
+          },
+        },
+        "divider": undefined,
+        "enabled": false,
+        "iconColor": "blue",
+        "iconName": "New",
+        "iconOnly": true,
+        "id": "2",
+        "isHeader": undefined,
+        "key": "item2",
+        "name": "Item 2",
+        "parentItemKey": undefined,
+        "topDivider": undefined,
+        "visible": undefined,
+      },
+      Object {
+        "checked": undefined,
+        "data": MockEntityRecord {
+          "getNamedReference": [MockFunction],
+          "id": "3",
+          "values": Object {
+            "ItemDisplayName": "Item 3",
+            "ItemEnabled": true,
+            "ItemIconColor": "green",
+            "ItemIconName": "Save",
+            "ItemIconOnly": true,
+            "ItemKey": "item3",
+          },
+        },
+        "divider": undefined,
+        "enabled": true,
+        "iconColor": "green",
+        "iconName": "Save",
+        "iconOnly": true,
+        "id": "3",
+        "isHeader": undefined,
+        "key": "item3",
+        "name": "Item 3",
+        "parentItemKey": undefined,
+        "topDivider": undefined,
+        "visible": undefined,
+      },
+      Object {
+        "checked": undefined,
+        "data": MockEntityRecord {
+          "getNamedReference": [MockFunction],
+          "id": "5",
+          "values": Object {
+            "ItemDisplayName": "Sub 1",
+            "ItemIconName": "New",
+            "ItemKey": "item4",
+            "ItemParentKey": "commandOpen",
+          },
+        },
+        "divider": undefined,
+        "enabled": undefined,
+        "iconColor": undefined,
+        "iconName": "New",
+        "iconOnly": undefined,
+        "id": "5",
+        "isHeader": undefined,
+        "key": "item4",
+        "name": "Sub 1",
+        "parentItemKey": "commandOpen",
+        "topDivider": undefined,
+        "visible": undefined,
+      },
+      Object {
+        "checked": undefined,
+        "data": MockEntityRecord {
+          "getNamedReference": [MockFunction],
+          "id": "6",
+          "values": Object {
+            "ItemDisplayName": "Sub 2",
+            "ItemIconName": "Save",
+            "ItemKey": "item5",
+            "ItemParentKey": "commandOpen",
+          },
+        },
+        "divider": undefined,
+        "enabled": undefined,
+        "iconColor": undefined,
+        "iconName": "Save",
+        "iconOnly": undefined,
+        "id": "6",
+        "isHeader": undefined,
+        "key": "item5",
+        "name": "Sub 2",
+        "parentItemKey": "commandOpen",
+        "topDivider": undefined,
+        "visible": undefined,
+      },
+    ]
+  }
+  onSelected={[Function]}
+  setFocus=""
+  showChevron={true}
+  tabIndex={5}
+  themeJSON={null}
+  width={-1}
+/>
+`;

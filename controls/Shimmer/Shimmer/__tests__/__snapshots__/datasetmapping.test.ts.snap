@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatasetMapping returns correct props 1`] = `
+Array [
+  Object {
+    "height": 10,
+    "type": 3,
+    "width": "20%",
+  },
+]
+`;

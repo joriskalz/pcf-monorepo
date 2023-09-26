@@ -1,0 +1,45 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jest": true,
+        "jasmine": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier",
+        "sonarjs"
+    ],
+    "rules": {
+        "prettier/prettier": "off",
+        "no-unused-vars": "off",
+        "no-undef": "off",
+        "no-dupe-class-members": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.ts"
+            ],
+            "rules": {
+                "camelcase": [
+                    2,
+                    {
+                        "properties": "never"
+                    }
+                ]
+            }
+        }
+    ],
+    "ignorePatterns": [
+        "**/generated/**"
+    ]
+}
