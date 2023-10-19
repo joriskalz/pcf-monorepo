@@ -1,0 +1,22 @@
+{
+    "name": "PCF devcontainer",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "danish-naglekar.pcf-builder",
+          "microsoft-isvexptools.powerplatform-vscode",
+          "github.copilot"
+        ],
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "pwsh"
+        }
+      }
+    },
+    "forwardPorts": [8181],
+    "containerEnv": {
+      "CHOKIDAR_USEPOLLING": "1"
+    },
+    "postCreateCommand": "pwsh -c 'if(-not (Test-Path /workspaces/tools)) { git clone --depth=1 https://github.com/microsoft/powerplatform-actions.git actions; Move-Item -Path ./actions/dist/pac_linux/tools -Destination /workspaces -Force; Remove-Item actions -Force -Recurse; }'"
+  }
+  
